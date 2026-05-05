@@ -18,20 +18,22 @@
     <!-- Header Navigation -->
     <header class="navbar">
         <div class="logo">
-            <img src="logo.PNG" alt="Rexponential Logo" id="logoImg" class="logo-image">
-            <div id="logoFallback" class="logo-fallback" style="display: none;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 21V5C5 4.44772 5.44772 4 6 4H14.5C16.9853 4 19 6.01472 19 8.5C19 10.9853 16.9853 13 14.5 13H9V21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M13 13L20 21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <span>Rexponential</span>
+            <a href="LandingPage.html" style="display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;">
+                <img src="logo.PNG" alt="Rexponential Logo" id="logoImg" class="logo-image">
+                <div id="logoFallback" class="logo-fallback" style="display: none;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 21V5C5 4.44772 5.44772 4 6 4H14.5C16.9853 4 19 6.01472 19 8.5C19 10.9853 16.9853 13 14.5 13H9V21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 13L20 21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span>Rexponential</span>
+            </a>
         </div>
         <nav class="desktop-nav">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Platform</a>
-            <a href="#">Partnerships Matter</a>
+            <a href="#how-it-helps">About</a>
+            <a href="#services-section">Services</a>
+            <a href="#cta-banner">Platform</a>
+            <a href="#why-partnerships">Partnerships Matter</a>
         </nav>
         <div class="header-cta">
             <a href="#" class="btn btn-primary">
@@ -67,7 +69,7 @@
             </a>
         </section>
 
-        <section class="how-it-helps">
+        <section class="how-it-helps" id="how-it-helps">
             <div class="section-container">
                 <div class="how-text">
                     <h2>How Rexponential helps with<br><span class="text-green">Revenue Growth</span></h2>
@@ -131,7 +133,7 @@
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="services-section">
             <div class="section-container">
                 <div class="services-header">
                     <h2><span class="text-green">Services</span></h2>
@@ -162,7 +164,7 @@
             </div>
         </section>
 
-        <section class="why-partnerships">
+        <section class="why-partnerships" id="why-partnerships">
             <div class="section-container">
                 <div class="why-header">
                     <h2>Why Partnerships <span class="text-green">Matter</span></h2>
@@ -171,29 +173,28 @@
                 
                 <div class="why-content">
                     <div class="why-list">
-                        <div class="why-item active">
+                        <div class="why-item active" data-index="0">
                             <div class="icon-circle active">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#192723" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                             </div>
                             <div>
-                                <h3>Referral Programs Drive Stronger Customer B2Bs Compared To Those Without.</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate finibus felis vitae maximus.</p>
+                                <h3>Referral Programs Drive Stronger Sales for B2Bs Compared to Those Without.</h3>
                             </div>
                         </div>
-                        <div class="why-item">
+                        <div class="why-item" data-index="1">
                             <div class="icon-circle outline">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                             </div>
                             <div>
-                                <h3>Referrals Outshine Cold Data: B2B Execs Prefer Recommended Vendors.</h3>
+                                <h3>Referrals Outshine Cold Calls: B2B Execs Prefer Recommended Vendors.</h3>
                             </div>
                         </div>
-                        <div class="why-item">
+                        <div class="why-item" data-index="2">
                             <div class="icon-circle outline">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2" stroke-width="2"><path d="M3 3v18h18"></path><path d="M18 9l-5 5-4-4-5 5"></path></svg>
                             </div>
                             <div>
-                                <h3>Listed B2B's with a Referral Program See Growth, Yet Only 30% Have One.</h3>
+                                <h3>Most B2Bs with Referral Programs See Growth, Yet Only 30% Have One.</h3>
                             </div>
                         </div>
                     </div>
@@ -203,13 +204,13 @@
                             <div class="chart-circle-container">
                                 <svg class="progress-ring" width="180" height="180">
                                     <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="12" fill="transparent" r="75" cx="90" cy="90"/>
-                                    <circle class="progress-ring__circle" stroke="#C2EC5E" stroke-width="12" stroke-linecap="round" fill="transparent" r="75" cx="90" cy="90" stroke-dasharray="471" stroke-dashoffset="66"/>
+                                    <circle class="progress-ring__circle" id="progressRing" stroke="#C2EC5E" stroke-width="12" stroke-linecap="round" fill="transparent" r="75" cx="90" cy="90" stroke-dasharray="471" stroke-dashoffset="66"/>
                                 </svg>
                                 <div class="chart-tooltip"></div>
                             </div>
                             <div class="chart-text">
-                                <h4>86%</h4>
-                                <p>of B2B companies with a referral program experience growth,<br>but only 30% of B2B companies have a referral program in place.</p>
+                                <h4 id="chartPercentage">86%</h4>
+                                <p id="chartDescription">of B2B companies with a referral program experience growth.<br>Yet, only <strong>30% of B2B companies</strong> have a formal referral program in place.</p>
                             </div>
                         </div>
                     </div>
@@ -217,7 +218,7 @@
             </div>
         </section>
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
             <div class="section-container contact-container">
                 <div class="contact-form-side">
                     <form>
@@ -259,7 +260,7 @@
             </div>
         </section>
 
-        <section class="cta-banner">
+        <section class="cta-banner" id="cta-banner">
             <div class="section-container">
                 <div class="banner-inner">
                     <div class="banner-text">
@@ -311,8 +312,8 @@
             <div class="footer-col links-col">
                 <ul>
                     <li><a href="#">Request a Quote</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Terms.html">Terms of service</a></li>
                 </ul>
             </div>
             
@@ -340,6 +341,56 @@
                 document.getElementById('logoFallback').style.display = 'flex';
             });
         }
+
+        // Partnerships Section Interactivity
+        const partnershipData = [
+            {
+                percentage: 86,
+                text: 'of B2B companies with a referral program experience growth.<br>Yet, only <strong>30% of B2B companies</strong> have a formal referral program in place.'
+            },
+            {
+                percentage: 76,
+                text: 'of B2B executives prefer to work with vendors who have been recommended by someone they know.<br><strong>Referrals are 34x more valuable</strong> than a cold call and <strong>4x more valuable</strong> than a web lead.'
+            },
+            {
+                percentage: 55,
+                text: 'of B2Bs with referral programs believe their sales efforts are "highly effective", compared to just <strong>35%</strong> of companies without referral programs.'
+            }
+        ];
+
+        const whyItems = document.querySelectorAll('.why-item');
+        const progressRing = document.getElementById('progressRing');
+        const chartPercentage = document.getElementById('chartPercentage');
+        const chartDescription = document.getElementById('chartDescription');
+
+        whyItems.forEach((item, index) => {
+            item.addEventListener('click', () => { 
+                // Update active classes
+                whyItems.forEach(i => {
+                    i.classList.remove('active');
+                    const iconCircle = i.querySelector('.icon-circle');
+                    iconCircle.classList.remove('active');
+                    iconCircle.classList.add('outline');
+                    i.querySelector('svg').setAttribute('stroke', '#a0aab2');
+                });
+
+                item.classList.add('active');
+                const activeIconCircle = item.querySelector('.icon-circle');
+                activeIconCircle.classList.add('active');
+                activeIconCircle.classList.remove('outline');
+                item.querySelector('svg').setAttribute('stroke', '#192723');
+
+                // Update chart data
+                const data = partnershipData[index];
+                chartPercentage.textContent = data.percentage + '%';
+                chartDescription.innerHTML = data.text;
+
+                // Animate progress ring
+                const circumference = 471; // 2 * PI * 75
+                const offset = circumference - (data.percentage / 100) * circumference;
+                progressRing.style.strokeDashoffset = offset;
+            });
+        });
     </script>
 </body>
 </html>
