@@ -43,7 +43,7 @@
                 </svg>
             </a>
         </div>
-        <div class="mobile-menu-btn">
+        <div class="mobile-menu-btn" id="mobileMenuOpen">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -51,6 +51,25 @@
             </svg>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-menu" id="mobileMenuClose">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="#how-it-helps" class="mobile-link">About</a>
+            <a href="#services-section" class="mobile-link">Services</a>
+            <a href="#cta-banner" class="mobile-link">Platform</a>
+            <a href="#why-partnerships" class="mobile-link">Partnerships Matter</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="#" class="btn btn-primary w-100">Request a Quote</a>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main>
@@ -137,7 +156,7 @@
             <div class="section-container">
                 <div class="services-header">
                     <h2><span class="text-green">Services</span></h2>
-                    <p>Personalized for Clients with</p>
+                    <p>We support Clients with</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-item">
@@ -363,6 +382,19 @@
         const chartPercentage = document.getElementById('chartPercentage');
         const chartDescription = document.getElementById('chartDescription');
 
+        // Initial setup for progress ring
+        const updateProgressRing = (percentage) => {
+            const isMobile = window.innerWidth <= 768;
+            const radius = isMobile ? 60 : 75;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (percentage / 100) * circumference;
+            progressRing.style.strokeDasharray = circumference;
+            progressRing.style.strokeDashoffset = offset;
+        };
+        
+        // Call once on load
+        updateProgressRing(86);
+
         whyItems.forEach((item, index) => {
             item.addEventListener('click', () => { 
                 // Update active classes
@@ -386,10 +418,37 @@
                 chartDescription.innerHTML = data.text;
 
                 // Animate progress ring
-                const circumference = 471; // 2 * PI * 75
-                const offset = circumference - (data.percentage / 100) * circumference;
-                progressRing.style.strokeDashoffset = offset;
+                updateProgressRing(data.percentage);
             });
+        });
+
+        // Mobile Menu Logic
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOpen = document.getElementById('mobileMenuOpen');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+        };
+
+        mobileMenuOpen.addEventListener('click', toggleMenu);
+        mobileMenuClose.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Handle window resize for progress ring
+        window.addEventListener('resize', () => {
+            const activeIndex = Array.from(whyItems).findIndex(item => item.classList.contains('active'));
+            if (activeIndex !== -1) {
+                updateProgressRing(partnershipData[activeIndex].percentage);
+            }
         });
     </script>
 </body>

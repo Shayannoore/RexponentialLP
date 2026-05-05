@@ -43,7 +43,7 @@
                 </svg>
             </a>
         </div>
-        <div class="mobile-menu-btn">
+        <div class="mobile-menu-btn" id="mobileMenuOpen">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="12" x2="21" y2="12"></line>
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -51,6 +51,25 @@
             </svg>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <div class="close-menu" id="mobileMenuClose">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="LandingPage.html#how-it-helps" class="mobile-link">About</a>
+            <a href="LandingPage.html#services-section" class="mobile-link">Services</a>
+            <a href="LandingPage.html#cta-banner" class="mobile-link">Platform</a>
+            <a href="LandingPage.html#why-partnerships" class="mobile-link">Partnerships Matter</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <a href="#" class="btn btn-primary w-100">Request a Quote</a>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <main>
@@ -201,6 +220,27 @@
 
         if (logoImg) logoImg.addEventListener('error', function() { handleLogoError(this); });
         if (footerLogo) footerLogo.addEventListener('error', function() { this.style.display = 'none'; });
+
+        // Mobile Menu Logic
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOpen = document.getElementById('mobileMenuOpen');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+        };
+
+        mobileMenuOpen.addEventListener('click', toggleMenu);
+        mobileMenuClose.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
     </script>
 </body>
 </html>
