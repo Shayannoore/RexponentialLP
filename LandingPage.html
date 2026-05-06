@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
-    
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <!-- Background Effects -->
     <div class="bg-glow"></div>
     <div class="flare left"></div>
     <div class="flare right"></div>
 
-    <!-- Header Navigation -->
-    <header class="navbar">
-        <div class="logo">
-            <a href="LandingPage.html" style="display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit;">
-                <img src="logo.PNG" alt="Rexponential Logo" id="logoImg" class="logo-image">
-                <div id="logoFallback" class="logo-fallback" style="display: none;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 21V5C5 4.44772 5.44772 4 6 4H14.5C16.9853 4 19 6.01472 19 8.5C19 10.9853 16.9853 13 14.5 13H9V21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13 13L20 21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-                <span>Rexponential</span>
-            </a>
-        </div>
-        <nav class="desktop-nav">
-            <a href="#how-it-helps" class="navtxt">About</a>
-            <a href="#services-section" class="navtxt">Services</a>
-            <a href="#cta-banner" class="navtxt">Platform</a>
-            <a href="#why-partnerships" class="navtxt">Partnerships Matter</a>
-        </nav>
-        <div class="header-cta">
-            <a href="#" class="btn btn-primary">
-                Request a Quote
-                <svg width="20px" height="20px" margin-left="6.87px" rotation="180deg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 18l6-6-6-6"/>
-                </svg> 
-            </a>
-        </div>
-        <div class="mobile-menu-btn" id="mobileMenuOpen">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-        </div>
-    </header>
-
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay" id="mobileMenu">
         <div class="close-menu" id="mobileMenuClose">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <line x1="18" y1="6" x2="6" y2="18"></line>
                 <line x1="6" y1="6" x2="18" y2="18"></line>
             </svg>
@@ -74,36 +40,91 @@
 
     <!-- Main Content -->
     <main>
-        <section class="hero">
-            <h1 class="pilltxt">
-                <span class="pill">Supercharge</span> Your Revenue Growth with tech-enabled Partner Management
-            </h1>
-            <p class="subtitle">
-                Scale your sales with seamless referral partner management.<br class="desktop-br"> Rexponential helps you build partnerships, track leads, and manage commissions with ease.
-            </p>
-            <a href="#" class="btn btn-primary hero-btn">
-                Request a Quote
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 18l6-6-6-6"/>
-                </svg>
-            </a>
-        </section>
-
-        <section class="how-it-helps" id="how-it-helps">
-            <div class="section-container">
-                <div class="how-text">
-                    <h2>How Rexponential helps with<br><span class="text-green">Revenue Growth</span></h2>
-                    <p>
-                        At Rexponential we build custom affiliate partner management products personalized to your needs, business and industry dynamics. Our custom software builds help you with
-                    </p>
+        <!-- Top Section (Background Wrapper) -->
+        <div class="top-section">
+            <!-- Header Navigation -->
+            <header class="navbar">
+                <a href="LandingPage.html" class="logo">
+                    <img src="logo.PNG" alt="Rexponential Logo" id="logoImg" class="logo-image">
+                    <div id="logoFallback" class="logo-fallback" style="display: none;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5 21V5C5 4.44772 5.44772 4 6 4H14.5C16.9853 4 19 6.01472 19 8.5C19 10.9853 16.9853 13 14.5 13H9V21"
+                                stroke="#C2EC5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M13 13L20 21" stroke="#C2EC5E" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <span>Rexponential</span>
+                </a>
+                <nav class="desktop-nav">
+                    <a href="#how-it-helps" class="navtxt">About</a>
+                    <a href="#services-section" class="navtxt">Services</a>
+                    <a href="#cta-banner" class="navtxt">Platform</a>
+                    <a href="#why-partnerships" class="navtxt">Partnerships Matter</a>
+                </nav>
+                <div class="header-cta">
+                    <a href="#" class="btn btn-primary">
+                        Request a Quote
+                        <svg width="20px" height="20px" margin-left="6.87px" rotation="180deg" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </a>
                 </div>
-                
+                <div class="mobile-menu-btn" id="mobileMenuOpen">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+            </header>
+
+            <section class="hero">
+                <h1 class="pilltxt">
+                    <span class="pill">Supercharge</span> Your Revenue Growth with tech-enabled Partner Management
+                </h1>
+                <p class="subtitle">
+                    Scale your sales with seamless referral partner management.<br class="desktop-br"> Rexponential
+                    helps you build partnerships, track leads, and manage commissions with ease.
+                </p>
+                <a href="#" class="btn btn-primary hero-btn">
+                    Request a Quote
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </a>
+            </section>
+
+            <section class="how-it-helps" id="how-it-helps">
+                <div class="section-container">
+                    <div class="how-flex-container">
+                        <h2>How Rexponential helps with<br><span class="text-green">Revenue Growth</span></h2>
+                        <p>
+                            At Rexponential we build custom affiliate partner management products personalized to your
+                            needs, business and industry dynamics. Our custom software builds help you with
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="how-features" id="features">
+            <div class="section-container">
                 <div class="horizontal-scroll-container">
                     <div class="horizontal-scroll-track">
                         <!-- Card 1 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path><path d="M12 8v4l3 3"></path></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    <path d="M12 8v4l3 3"></path>
+                                </svg>
                             </div>
                             <h3>Manage</h3>
                             <p>Accurately attribute leads to your affiliate partners.</p>
@@ -111,15 +132,28 @@
                         <!-- Card 2 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
                             </div>
                             <h3>Assign</h3>
-                            <p>Calculate commission directly from revenue data gathered through your payment processors.</p>
+                            <p>Calculate commission directly from revenue data gathered through your payment processors.
+                            </p>
                         </div>
                         <!-- Card 3 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                    <path d="M6 12h.01M18 12h.01"></path>
+                                </svg>
                             </div>
                             <h3>Pay</h3>
                             <p>Automate commission payouts through modern fintech integrations.</p>
@@ -127,7 +161,12 @@
                         <!-- Card 4 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M12 20V10"></path><path d="M18 20V4"></path><path d="M6 20v-4"></path></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <path d="M12 20V10"></path>
+                                    <path d="M18 20V4"></path>
+                                    <path d="M6 20v-4"></path>
+                                </svg>
                             </div>
                             <h3>Optimise</h3>
                             <p>Splits commissions based on custom built ruleset tailored to your business.</p>
@@ -135,7 +174,11 @@
                         <!-- Card 5 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
                             </div>
                             <h3>Attribute</h3>
                             <p>Accurately attribute leads to your affiliate partners.</p>
@@ -143,7 +186,13 @@
                         <!-- Card 6 -->
                         <div class="feature-card">
                             <div class="icon-circle">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                    stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <line x1="20" y1="8" x2="20" y2="14"></line>
+                                    <line x1="23" y1="11" x2="17" y2="11"></line>
+                                </svg>
                             </div>
                             <h3>Recruit</h3>
                             <p>Onboard referral partners immediately.</p>
@@ -161,23 +210,42 @@
                 </div>
                 <div class="services-grid">
                     <div class="service-item">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="3" x2="9" y2="21"></line>
+                        </svg>
                         <p>Custom Partner<br>Management Builds</p>
                     </div>
                     <div class="service-item">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"></path></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16.2 7.8l-2 6.3-6.4 2.1 2-6.3z"></path>
+                        </svg>
                         <p>Tailored Partner<br>Program Strategy</p>
                     </div>
                     <div class="service-item">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
                         <p>Partner Management<br>System APIs</p>
                     </div>
                     <div class="service-item">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
                         <p>Tailored Commission<br>Rule Builds</p>
                     </div>
                     <div class="service-item">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
                         <p>Commission<br>Management Strategies</p>
                     </div>
                 </div>
@@ -188,14 +256,21 @@
             <div class="section-container">
                 <div class="why-header">
                     <h2>Why Partnerships <span class="text-green">Matter</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate finibus felis vitae maximus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate finibus felis vitae
+                        maximus.</p>
                 </div>
-                
+
                 <div class="why-content">
                     <div class="why-list">
                         <div class="why-item active" data-index="0">
                             <div class="icon-circle active">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#192723" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#192723"
+                                    stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5c-1.1 0-2 .9-2 2v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
                             </div>
                             <div>
                                 <h3>Referral Programs Drive Stronger Sales for B2Bs Compared to Those Without.</h3>
@@ -203,7 +278,11 @@
                         </div>
                         <div class="why-item" data-index="1">
                             <div class="icon-circle outline">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2"
+                                    stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
                             </div>
                             <div>
                                 <h3>Referrals Outshine Cold Calls: B2B Execs Prefer Recommended Vendors.</h3>
@@ -211,26 +290,35 @@
                         </div>
                         <div class="why-item" data-index="2">
                             <div class="icon-circle outline">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2" stroke-width="2"><path d="M3 3v18h18"></path><path d="M18 9l-5 5-4-4-5 5"></path></svg>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a0aab2"
+                                    stroke-width="2">
+                                    <path d="M3 3v18h18"></path>
+                                    <path d="M18 9l-5 5-4-4-5 5"></path>
+                                </svg>
                             </div>
                             <div>
                                 <h3>Most B2Bs with Referral Programs See Growth, Yet Only 30% Have One.</h3>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="why-graphic">
                         <div class="chart-card">
                             <div class="chart-circle-container">
                                 <svg class="progress-ring" width="180" height="180">
-                                    <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)" stroke-width="12" fill="transparent" r="75" cx="90" cy="90"/>
-                                    <circle class="progress-ring__circle" id="progressRing" stroke="#C2EC5E" stroke-width="12" stroke-linecap="round" fill="transparent" r="75" cx="90" cy="90" stroke-dasharray="471" stroke-dashoffset="66"/>
+                                    <circle class="progress-ring__circle-bg" stroke="rgba(255,255,255,0.1)"
+                                        stroke-width="12" fill="transparent" r="75" cx="90" cy="90" />
+                                    <circle class="progress-ring__circle" id="progressRing" stroke="#C2EC5E"
+                                        stroke-width="12" stroke-linecap="round" fill="transparent" r="75" cx="90"
+                                        cy="90" stroke-dasharray="471" stroke-dashoffset="66" />
                                 </svg>
                                 <div class="chart-tooltip"></div>
                             </div>
                             <div class="chart-text">
                                 <h4 id="chartPercentage">86%</h4>
-                                <p id="chartDescription">of B2B companies with a referral program experience growth.<br>Yet, only <strong>30% of B2B companies</strong> have a formal referral program in place.</p>
+                                <p id="chartDescription">of B2B companies with a referral program experience
+                                    growth.<br>Yet, only <strong>30% of B2B companies</strong> have a formal referral
+                                    program in place.</p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +363,8 @@
                 </div>
                 <div class="contact-text-side">
                     <h2>Ready to<br>supercharge<br>your revenue?<br><span class="text-green">Get in touch</span></h2>
-                    <p>Rexponential makes affiliate partner success easy.<br>At support, our affiliate solutions help you boom revenue.</p>
+                    <p>Rexponential makes affiliate partner success easy.<br>At support, our affiliate solutions help
+                        you boom revenue.</p>
                 </div>
             </div>
         </section>
@@ -301,25 +390,37 @@
             <div class="footer-col brand-col">
                 <div class="logo">
                     <img src="logo.PNG" alt="Logo" class="logo-image" id="footerLogo">
-                    <span style="color:white; font-size: 28px; font-weight:400; letter-spacing: -0.5px;">Rexponential</span>
+                    <span
+                        style="color:white; font-size: 28px; font-weight:400; letter-spacing: -0.5px;">Rexponential</span>
                 </div>
                 <p class="desc">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Donec accumsan</p>
                 <div class="contact-info">
                     <div class="contact-row">
                         <div class="contact-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M16 12a4 4 0 0 1-8 0 4 4 0 0 1 8 0zm0 0v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-2.636 6.364"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C2EC5E"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path
+                                    d="M16 12a4 4 0 0 1-8 0 4 4 0 0 1 8 0zm0 0v1.5a2.5 2.5 0 0 0 5 0V12a9 9 0 1 0-2.636 6.364">
+                                </path>
+                            </svg>
                         </div>
                         <p>hello@rexponential.com</p>
                     </div>
                     <div class="contact-row">
                         <div class="contact-icon map-icon-container">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="transparent" stroke-width="0"><path fill="#658849" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path><circle cx="12" cy="9" r="2.5" fill="#C2EC5E"></circle></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="transparent"
+                                stroke-width="0">
+                                <path fill="#658849"
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                                <circle cx="12" cy="9" r="2.5" fill="#C2EC5E"></circle>
+                            </svg>
                         </div>
                         <p>1111B S Governors Ave STE<br>21167<br>Dover, DE 19904, United States</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-col links-col">
                 <ul>
                     <li><a href="#">About</a></li>
@@ -328,7 +429,7 @@
                     <li><a href="#">Rexponential Platform</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-col links-col">
                 <ul>
                     <li><a href="#">Request a Quote</a></li>
@@ -336,7 +437,7 @@
                     <li><a href="Terms.html">Terms of service</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-col newsletter-col">
                 <h4 class="text-green newsletter-title">Newsletter</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec accumsan</p>
@@ -356,7 +457,7 @@
     <script>
         const logoImg = document.getElementById('logoImg');
         if (logoImg) {
-            logoImg.addEventListener('error', function() {
+            logoImg.addEventListener('error', function () {
                 this.style.display = 'none';
                 document.getElementById('logoFallback').style.display = 'flex';
             });
@@ -392,12 +493,12 @@
             progressRing.style.strokeDasharray = circumference;
             progressRing.style.strokeDashoffset = offset;
         };
-        
+
         // Call once on load
         updateProgressRing(86);
 
         whyItems.forEach((item, index) => {
-            item.addEventListener('click', () => { 
+            item.addEventListener('click', () => {
                 // Update active classes
                 whyItems.forEach(i => {
                     i.classList.remove('active');
@@ -453,4 +554,5 @@
         });
     </script>
 </body>
+
 </html>
